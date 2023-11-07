@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class bancoMain {
     public static void main(String[] args) throws Exception {
 
@@ -19,9 +18,7 @@ public class bancoMain {
         System.out.println("Informe o seu saldo: ");
         cliente.saldoConta = sc.nextDouble();
 
-        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %f já está disponível para saque.", cliente.nomeCliente, cliente.agencia, cliente.numConta, cliente.saldoConta);
-
-
+        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f já está disponível para saque.", cliente.nomeCliente, cliente.agencia, cliente.numConta, cliente.saldoConta);
 
         sc.close();
     }
